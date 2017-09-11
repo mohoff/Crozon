@@ -1,0 +1,13 @@
+{
+  "name": "photoblog",
+  "version": "0.1",
+  "description": "Photo blog for posting travel pictures",
+  "author": {
+    "name": "Moritz Hoffmann",
+    "email": "mail@mohoff.de",
+    "url": "https://mohoff.de"
+  },
+  "config": {
+    "posts_per_page": 10
+  }
+}
