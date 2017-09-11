@@ -1,0 +1,13 @@
+<header>header</header>
+<div itemprop="articleBody">photo</div>
+<div>
+	<h1 itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>,
+	<time class="date_uber" datetime="{{date format="MMMM YYYY"}}" itemprop="datePublished">{{date format='MMMM YYYY'}}</time>,
+	from {{author.name}}
+</div>
+{{#if tags}}
+	<div>Tags: {{tags separator=" | "}}</div>
+{{/if}}
+
+{{!content}}
+{{!excerpt}}

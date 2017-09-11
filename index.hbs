@@ -1,1 +1,16 @@
 {{!< default}}
+
+<main role="main">
+	{{#foreach posts}}
+		<article role="article" itemscope itemtype="http://schema.org/Article">
+			{{> card}}
+		</article>
+	{{/foreach}}
+
+
+	{{#if pagination}}
+		<div>{{{pagination}}}</div>
+	{{/if}}
+</main>
+
+{{> footer}}
