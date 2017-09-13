@@ -1,13 +1,34 @@
-<header>header</header>
-<div itemprop="articleBody">photo</div>
-<div>
-	<h1 itemprop="headline"><a href="{{{url}}}" rel="bookmark">{{title}}</a></h1>,
-	<time class="date_uber" datetime="{{date format="MMMM YYYY"}}" itemprop="datePublished">{{date format='MMMM YYYY'}}</time>,
-	from {{author.name}}
-</div>
-{{#if tags}}
-	<div>Tags: {{tags separator=" | "}}</div>
-{{/if}}
+<header>{{title}}</header>
+<div itemprop="articleBody">
+	{{#if feature_image}}
+    <section class="post-image">
+			<!--<a href="{{{url}}}" class="post-image"> or double curyly? -->
+        <img src="{{feature_image}}" alt="">
+      <!--</a>-->
+		</section>
+	{{/if}}
 
-{{!content}}
-{{!excerpt}}
+	<section class="post-content">
+		{{content}}
+		<!--{{!excerpt words=10}}…-->
+	</section>
+
+	<section class="post-meta">
+		<span class="date">
+			<i class="fa fa-clock-o"></i>
+			<time class="date_uber" title="{{date timeago='true'}}" datetime="{{date format="MMMM YYYY"}}" itemprop="datePublished">
+				{{date published_at format='MMMM YYYY'}}
+			</time>
+		</span>
+		{{#if tags}}
+			<span class="tags">
+				<i class="fa fa-tags"></i>
+				<span>
+					{{tags prefix="" separator=" | "}}
+				</span>
+			</span>
+		{{/if}}
+	</section>
+  <!-- TITLE unused -->
+	<!-- author.name unused -->
+</div>

@@ -1,6 +1,9 @@
 {{!< default}}
 
 <main role="main">
+	Results for TAG: {{tag.name}}
+	tag-description: {{tag.description}}
+	
 	{{#foreach posts}}
 		<article class="{{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
 			{{> card}}
@@ -12,5 +15,3 @@
 		<div>{{{pagination}}}</div>
 	{{/if}}
 </main>
-
-{{> footer}}
