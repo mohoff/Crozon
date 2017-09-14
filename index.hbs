@@ -1,16 +1,15 @@
 {{!< default}}
 
-<main role="main">
+<main role="main" class="row container">
 	{{#foreach posts}}
-		<article class="{{post_class}}" role="article" itemscope itemtype="http://schema.org/Article">
-			{{> card}}
+		<article class="{{post_class}} col s12" role="article" itemscope itemtype="http://schema.org/Article">
+				{{> card}}
 		</article>
 	{{/foreach}}
-
-
-	{{#if pagination}}
-		<div>{{{pagination}}}</div>
-	{{/if}}
 </main>
+
+{{#if pagination}}
+	<div>{{{pagination}}}</div>
+{{/if}}
 
 {{> footer}}

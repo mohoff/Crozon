@@ -5,3 +5,15 @@
 - load cards on scroll so that pagination is not needed anymore
 
 - give full res or at least high res of photos when clicking a card in the card feed.
+
+- realize different kinds of cards. Also see: http://materializecss.com/media-css.html
+	* photo (+description)
+	* video (+description)
+	* text only
+
+- organize hover-effect and shadow of cards:
+	* http://materializecss.com/shadow.html
+
+- make use of materialize-icons?
+
+- tag search functionality? with materialize "chip" design. See: http://materializecss.com/chips.html

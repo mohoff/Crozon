@@ -1,34 +1,36 @@
-<header>{{title}}</header>
-<div itemprop="articleBody">
+<div itemprop="articleBody" class="card">
 	{{#if feature_image}}
-    <section class="post-image">
+    <div class="card-image">
 			<!--<a href="{{{url}}}" class="post-image"> or double curyly? -->
-        <img src="{{feature_image}}" alt="">
+        <img src="{{feature_image}}" alt=""><!-- class="materialboxed" -->
       <!--</a>-->
-		</section>
+		</div>
 	{{/if}}
 
-	<section class="post-content">
-		{{content}}
-		<!--{{!excerpt words=10}}…-->
-	</section>
+	<div class="card-content">
+		<!-- card title and description -->
+		<div class="card-info">
+			<p class="flow-text">{{title}}</p>
+			<p>{{content}}</p>
+		</div>
+		<!-- publish date and tags -->
+		<div class="row card-meta">
+			<div class="col s4 date">
+				<a class="tooltipped" data-position="top" data-delay="100" data-tooltip="{{date timeago='true'}}" datetime="{{date format="MMMM YYYY"}}">
+					<time itemprop="datePublished">
+						{{date published_at format='MMMM YYYY'}}
+					</time>
+				</a>
+			</div>
+			<div class="col s8 right-align">
+				{{#if tags}}
+					{{#foreach tags}}
+						<div class="chip">{{name}}</div>
+					{{/foreach}}
+				{{/if}}
+			</div>
+		</div>
+	</div>
 
-	<section class="post-meta">
-		<span class="date">
-			<i class="fa fa-clock-o"></i>
-			<time class="date_uber" title="{{date timeago='true'}}" datetime="{{date format="MMMM YYYY"}}" itemprop="datePublished">
-				{{date published_at format='MMMM YYYY'}}
-			</time>
-		</span>
-		{{#if tags}}
-			<span class="tags">
-				<i class="fa fa-tags"></i>
-				<span>
-					{{tags prefix="" separator=" | "}}
-				</span>
-			</span>
-		{{/if}}
-	</section>
-  <!-- TITLE unused -->
 	<!-- author.name unused -->
 </div>
