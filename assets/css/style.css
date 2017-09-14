@@ -1,3 +1,5 @@
+/* This file contains mostly overrides for the materialize css framework */
+
 .card-content {
 	padding-left: 16px !important;
 	padding-bottom: 6px !important;
@@ -29,6 +31,17 @@ h1 {
 	padding-bottom: 8px !important;
 	font-style: italic;
 	color: rgb(180, 180, 180);
+}
+
+nav {
+	-webkit-box-shadow: inherit !important;
+	box-shadow: inherit !important;
+}
+
+.footer {
+	margin-top: 5rem;
+	padding: 50px 0px;
+	background-color: #eee;
 }
 
 /* alternative chip design */
