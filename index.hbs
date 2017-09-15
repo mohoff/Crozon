@@ -1,17 +1,20 @@
 {{!< default}}
 
-<main role="main" class="row container">
+{{> header}}
+
+<main role="main" class="container">
 	<!--
 	<div class="col s12">
 		<div class="chips chips-autocomplete"><i class="material-icons">search</i></div>
 	</div>
 	-->
-
-	{{#foreach posts}}
-		<article class="{{post_class}} col s12" role="article" itemscope itemtype="http://schema.org/Article">
-				{{> card}}
-		</article>
-	{{/foreach}}
+	<div class="row container">
+		{{#foreach posts}}
+			<article class="{{post_class}} col s12" role="article" itemscope itemtype="http://schema.org/Article">
+					{{> card}}
+			</article>
+		{{/foreach}}
+	</div>
 </main>
 
 {{#if pagination}}

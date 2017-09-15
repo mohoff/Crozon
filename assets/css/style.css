@@ -1,5 +1,13 @@
 /* This file contains mostly overrides for the materialize css framework */
 
+.header {
+	margin: 70px auto;
+}
+
+main > div {
+	margin: 0 auto !important;
+}
+
 .card-content {
 	padding-left: 16px !important;
 	padding-bottom: 6px !important;
