@@ -18,4 +18,7 @@
 
 - tag search functionality? with materialize "chip" design. See: http://materializecss.com/chips.html
 
+- Make visualized tags (and dates) clickable so one can search display posts with this one tag.
+- introduce types of posts: travel, texture, ...
+
 - future: make pagination like this: http://materializecss.com/pagination.html#!

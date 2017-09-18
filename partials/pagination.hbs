@@ -12,7 +12,7 @@
 		<li>/</li>
 		<li>{{pages}}</li>
 		<li {{^if next}}class="disabled"{{/if}}>
-			<a href="{{page_url next}}">
+			<a href="{{#if next}}{{page_url next}}{{else}}#!{{/if}}">
 				<i class="material-icons ">chevron_right</i>
 			</a>
 		</li>

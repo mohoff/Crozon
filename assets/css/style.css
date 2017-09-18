@@ -8,10 +8,19 @@ main > div {
 	margin: 0 auto !important;
 }
 
+article {
+	margin: 20px auto;
+}
+
+img, video {
+	max-width:100%;
+	height:auto;
+}
+
 .card-content {
 	padding-left: 16px !important;
 	padding-bottom: 6px !important;
-	padding-right: 6px !important;
+	padding-right: 16px !important;
 	padding-top: 16px !important;
 }
 
