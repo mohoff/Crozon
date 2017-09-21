@@ -1,7 +1,7 @@
 {
-  "name": "photoblog",
+  "name": "Crozon",
   "version": "1.0.0",
-  "description": "A Ghost theme for posting photos.",
+  "description": "A minimal Ghost theme for posting photos.",
   "author": {
     "name": "Moritz Hoffmann",
     "email": "mail@mohoff.de",
