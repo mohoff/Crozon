@@ -1,8 +1,7 @@
 Crozon
 ======
 
-A minimal Ghost theme for photos.
-*Screenshot below*
+A minimal Ghost theme for photos. Written for Ghost version 1.0.
 
 ## Motivation
 
