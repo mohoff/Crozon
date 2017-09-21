@@ -1,9 +1,7 @@
 <div itemprop="articleBody" class="card">
 	{{#if feature_image}}
     <div class="card-image">
-			<!--<a href="{{{url}}}" class="post-image"> or double curyly? -->
-        <img src="{{feature_image}}" alt=""><!-- class="materialboxed" -->
-      <!--</a>-->
+			<img src="{{feature_image}}" alt="">
 		</div>
 	{{/if}}
 
@@ -13,7 +11,7 @@
 			<p class="flow-text">{{title}}</p>
 			<p>{{content}}</p>
 		</div>
-		<!-- publish date and tags -->
+		<!-- date and tags -->
 		<div class="row card-meta">
 			<div class="col s4 date">
 				<a class="tooltipped" data-position="top" data-delay="100" data-tooltip="{{date timeago='true'}}" datetime="{{date format="MMMM YYYY"}}">
@@ -31,6 +29,4 @@
 			</div>
 		</div>
 	</div>
-
-	<!-- author.name unused -->
 </div>

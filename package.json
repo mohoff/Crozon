@@ -1,7 +1,7 @@
 {
   "name": "photoblog",
   "version": "1.0.0",
-  "description": "Photo blog for posting travel pictures",
+  "description": "A Ghost theme for posting photos.",
   "author": {
     "name": "Moritz Hoffmann",
     "email": "mail@mohoff.de",

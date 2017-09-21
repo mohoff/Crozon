@@ -88,6 +88,12 @@ nav ul a:hover {
 	color: #999;
 }
 
+.no-posts {
+	text-align: center;
+	color: rgb(180, 180, 180);
+	margin: 100px auto;
+}
+
 /* alternative chip design */
 .chip {
 	display: inline-block;
