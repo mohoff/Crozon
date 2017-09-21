@@ -1,5 +1,5 @@
 Crozon
-######
+======
 
 A minimal Ghost theme for photos.
 
