@@ -8,17 +8,15 @@
 	<div class="card-content">
 		<!-- card title and description -->
 		<div class="card-info">
-			<p class="flow-text">{{title}}</p>
-			<p>{{content}}</p>
+			<h2 class="flow-text">{{title}}</h2>
+			{{content}}
 		</div>
 		<!-- date and tags -->
 		<div class="row card-meta">
 			<div class="col s4 date">
-				<a class="tooltipped" data-position="top" data-delay="100" data-tooltip="{{date timeago='true'}}" datetime="{{date format="MMMM YYYY"}}">
-					<time itemprop="datePublished">
-						{{date published_at format='MMMM YYYY'}}
-					</time>
-				</a>
+				<time itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
+					{{date published_at format="MMMM YYYY"}}
+				</time>
 			</div>
 			<div class="col s8 right-align">
 				{{#if tags}}

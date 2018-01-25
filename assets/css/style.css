@@ -43,11 +43,15 @@ h1 {
 	font-weight: inherit !important;
 }
 
+h2 {
+	margin: 5px 0px 0px 0px !important;
+}
+
 .date {
 	line-height: 32px;
 	padding-bottom: 8px !important;
 	font-style: italic;
-	color: rgb(180, 180, 180);
+	color: rgb(0, 0, 0, 0.4);
 }
 
 nav {
@@ -104,7 +108,6 @@ nav ul a:hover {
 	line-height: 26px;
 	padding: 0 10px;
 	border-radius: 2px;
-	background-color: #efefef;
 	margin-bottom: 5px;
 	margin-right: 5px;
 }
