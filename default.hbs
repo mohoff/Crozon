@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
+    {{!-- Document Settings --}}
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    {{!-- Base Meta --}}
+    <title>{{meta_title}}</title>
     <meta name="HandheldFriendly" content="True" />
 	<meta name="MobileOptimized" content="320" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>{{meta_title}}</title>
-
+    {{!-- Custom styles and materialze.css framework --}}
 	<link type="text/css" href="{{asset 'css/style.css'}}" rel="stylesheet">
 	<link type="text/css" href="{{asset 'css/materialize.min.css'}}" rel="stylesheet">
 	
-	<!--Import Google Icon Font-->
+	{{!-- Custom font --}}
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+    {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
+    {{!-- All the main content gets inserted here, index.hbs, post.hbs, etc --}}
     {{{body}}}
 
+    {{!-- Ghost outputs important scripts and data with this tag --}}
     {{ghost_foot}}
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-		<script src="{{asset 'js/materialize.min.js'}}"></script>
+
+    {{!-- Custom imports: jquery and materialize --}}
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="{{asset 'js/materialize.min.js'}}"></script>
+
 </body>
 </html>

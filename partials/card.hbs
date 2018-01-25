@@ -1,23 +1,29 @@
+
+{{!-- Contains the layout of one single post (card) --}}
 <div itemprop="articleBody" class="card">
+	{{!-- The main image of the card --}}
 	{{#if feature_image}}
     <div class="card-image">
 			<img src="{{feature_image}}" alt="">
 		</div>
 	{{/if}}
 
+	{{!-- The content below the image: title, date, tags --}}
 	<div class="card-content">
-		<!-- card title and description -->
+		{{!-- card title and description --}}
 		<div class="card-info">
 			<h2 class="flow-text">{{title}}</h2>
 			{{content}}
 		</div>
-		<!-- date and tags -->
+		
 		<div class="row card-meta">
+			{{!-- The date of publication --}}
 			<div class="col s4 date">
 				<time itemprop="datePublished" datetime="{{date format="YYYY-MM-DD"}}">
 					{{date published_at format="MMMM YYYY"}}
 				</time>
 			</div>
+			{{!-- Associated tags --}}
 			<div class="col s8 right-align">
 				{{#if tags}}
 					{{#foreach tags}}

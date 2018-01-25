@@ -1,9 +1,15 @@
 {{!< default}}
+{{!-- The tag above means: insert everything in this file
+into the {body} of the default.hbs template --}}
 
+{{!-- The headline including sub-headline --}}
 {{> header}}
 
+{{!-- The main content area --}}
 <main class="container">
 	<div class="row container">
+
+		{{!-- Each post represents a photo card and follows the style defined in template 'card' --}}
 		{{#foreach posts}}
 			<article class="{{post_class}} col s12" itemscope itemtype="http://schema.org/Article">
 					{{> card}}
@@ -16,8 +22,10 @@
 	</div>
 </main>
 
+{{!-- The pagination element to switch between pages --}}
 {{#if pagination}}{{#if posts}}
 	<div class="container">{{{pagination}}}</div>
 {{/if}}{{/if}}
 
+{{!-- The footer element --}}
 {{> footer}}
