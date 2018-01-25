@@ -9,8 +9,6 @@ A minimal Ghost theme for photos.
 
 That's the idea behind **Crozon**, a minimal Ghost theme for photos and texts. Existing Ghost themes, even the ones designed for photo-stories, are too overloaded. Many elements visible on first page load distract from the value of a single photo. Multi-column views, social media buttons, comments and other eye-catchers are completely redundant if you want to absorb the unique atmosphere of a photo or anecdote.
 
-![Crozon theme](assets/screenshots/desktop.jpg)
-
 ## Features
 
 Every post is shown as a "card" (in material design terminology). A card comes with an image that is specified in Ghost as feature image. Below it follows a title and an optional description. As additional information are publish date as well as a list of tags shown.
@@ -25,4 +23,4 @@ On desktop:
 ![Crozon theme on Desktop](assets/screenshots/desktop.jpg)
 
 On mobile:
-![Crozon theme on Mobile](assets/screenshots/mobile.jpg)
+<img src="assets/screenshots/mobile.jpg" width="50%">
