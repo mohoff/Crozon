@@ -24,4 +24,6 @@ On desktop:
 
 On mobile:
 <br>
-<img src="assets/screenshots/mobile.jpg" width="50%">
+<p align="center">
+	<img src="assets/screenshots/mobile.jpg" width="50%">
+</p>
