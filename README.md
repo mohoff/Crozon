@@ -23,4 +23,5 @@ On desktop:
 ![Crozon theme on Desktop](assets/screenshots/desktop.jpg)
 
 On mobile:
+<br>
 <img src="assets/screenshots/mobile.jpg" width="50%">
