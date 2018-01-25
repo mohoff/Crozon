@@ -18,3 +18,11 @@ Every post is shown as a "card" (in material design terminology). A card comes w
 Pagination is enabled by default.
 
 This theme makes heavy use of [materializecss](http://materializecss.com/), a front-end framework that helped me to create a consistent, modern, and responsive design.
+
+## How it looks
+
+On desktop:
+![Crozon theme on Desktop](assets/screenshots/desktop.jpg)
+
+On mobile:
+![Crozon theme on Mobile](assets/screenshots/mobile.jpg)
