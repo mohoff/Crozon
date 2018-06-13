@@ -25,5 +25,5 @@ On desktop:
 On mobile:
 <br>
 <p align="center">
-	<img src="assets/screenshots/mobile.jpg" width="50%">
+	<img src="assets/screenshots/mobile.png" width="50%">
 </p>
